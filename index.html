@@ -39,23 +39,20 @@
                         <li class="menu"><a href="profile.html"><i class="fa-solid fa-user"></i>   Profile</a></li>&nbsp;
                           <li class="menu"><a href="more.html"><i class="fa-solid fa-bars"></i>   More</a></li>&nbsp;  
              </ul>
-          </div>
-          <div id="tweet-bar">
-            <div>
-               <button type="text" class="form-control rounded-pill tweet-bar-styles ps-5 pe-5 text-white bg-primary" >Tweet</button>
+             <div class="tweet-bar d-flex flex-column justify-content-between">
+               <button type="text" class="form-control rounded-pill tweet-bar-styles ps-5 pe-5 text-white bg-primary" >Tweet</button>  
+               <section class="user-pill p-2">
+               <div class="rounded-5 right-side-bar d-flex pe-2">
+                <div>
+                <img class="img rounded-circle"  src="https://thiscatdoesnotexist.com/" alt="Profilbild längst ner på vänstra sidan" />
+                </div>
+                <div class="ps-2 pt-2" >
+                  <p class="m-0 ">Förnamn Efternamn</p>
+                  <p class="m-0 text-secondary">@Användarnamn</p>
+                </div>
+               </div>
+               </section>
             </div>
-         </div>
-         <section class="user-pill justify-content-end fixed-bottom p-2">
-          <div class="rounded-5 right-side-bar d-flex pe-2">
-            <div>
-            <img class="img rounded-circle"  src="https://thiscatdoesnotexist.com/" alt="Profilbild längst ner på vänstra sidan" />
-            </div>
-            <div class="ps-2 pt-2" >
-              <p class="m-0 ">Förnamn Efternamn</p>
-              <p class="m-0 text-secondary">@Användarnamn</p>
-            </div>
-          </div>
-        </section>
     </nav>
       <!-- main -->
       <main class="container-2 overflow-auto vh-100 d-flex justify-content-center">
@@ -158,35 +155,66 @@
             </div>
           </div>
           <!-- tweet3 -->
-          <div class="border border-1 ps-3">
-            <div class="post mt-4 d-flex">
+          <div
+          class="follow-container p-3 align-content-lg-center border"
+        >
+          <div class="who-to-follow">
+            <h5>Who to follow</h5>
+          </div>
+          <div class="follow w-100 h-25 mt-4">
+            <div class="user-follow">
+              <div class="user-follow-space gap-2 d-flex pe-2">
                 <img
-                  class="img rounded-circle"
-                  src="https://thispersondoesnotexist.com/image"
+                  class="img rounded-circle" 
+                  src="https://thiscatdoesnotexist.com/"
                   alt="profilbild"
                 />
-            
-              <div>
-                <div class="user ps-2 d-flex gap-2 ps-4">
-                  <p class="m-0 "><strong>Ronny</strong></p>
-                  <p class="m-0 text-secondary">@Ronny 1d</p>
+                <div>
+                  <small><strong>namn</strong></small>
+                  <small
+                    class="user-follow-name-main d-flex justify-content-center text-secondary"
+                  >
+                    @användarnamn
+                  </small>
                 </div>
-                <p class="text ps-4 me-2 pe-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto quidem asperiores voluptatibus quae. Voluptatum facere excepturi, suscipit neque porro quae quidem repellendus molestias dicta assumenda, cumque est doloribus eligendi!
-     
-                </p>
+
+                <button
+                  class="button-follow-main bg-black rounded-pill h-25 text-white h-25 pt-0 ps-2 pe-2"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+            <div class="user-follow mt-2">
+              <div class="user-follow-space gap-2 mb-4 d-flex pe-2">
+                <img
+                  class="img rounded-circle"
+                  src="https://thiscatdoesnotexist.com/"
+                  alt="profilbild"
+                />
+                <div>
+                  <small><strong>namn</strong></small>
+                  <small
+                    class="user-follow-name-main d-flex justify-content-center text-secondary"
+                  >
+                    @användarnamn
+                  </small>
+                </div>
+
+                <button
+                  class="button-follow-main bg-black rounded-pill h-25 pt-0 ps-2 pe-2 text-white"
+                >
+                  Follow
+                </button>
               </div>
             </div>
             <div>
-              <ul class="bar ps-5 list-unstyled gap-5 d-flex">
-                <li><a class="text-secondary" href="#">💬 13.2</a></li>
-                <li><a class="text-secondary" href="#">↪️ 195</a></li>
-                <li><a class="text-secondary" href="#">❤️ 2,503</a></li>
-                <li><a class="text-secondary" href="#">🚀</a></li>
-                <li><a class="text-secondary" href="#">🔺 dricks</a></li>
-              </ul>
+              <button class="button-show-more bg-transparent text-primary">
+                Show more
+              </button>
             </div>
           </div>
+        </div>
           <!-- tweet4 -->
           <div class="border border-1 ps-3">
             <div class="post mt-4 d-flex">
@@ -326,7 +354,7 @@
                   </div>
 
                   <button
-                    class="button-follow bg-black rounded-pill h-25 text-white h-25 pt-0 ps-2 pe-2"
+                    class="button-follow bg-black rounded-pill h-25 text-white h-25 pt-0 ps-2 pe-2 mt-4"
                   >
                     Follow
                   </button>
@@ -352,7 +380,7 @@
                   </div>
 
                   <button
-                    class="button-follow bg-black rounded-pill h-25 pt-0 ps-2 pe-2 text-white"
+                    class="button-follow bg-black rounded-pill h-25 pt-0 ps-2 pe-2 text-white mt-3"
                   >
                     Follow
                   </button>
