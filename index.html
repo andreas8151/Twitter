@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6a6ca5915f.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -18,194 +19,390 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="vh-100 vw-100 overflow-hidden">
-    <div class="flex">
+  <body class="vh-100 vw-100 overflow-hidden ">
+    <div class="flex w-100 justify-content-center d-flex">
       <!-- navigation -->
-      <nav class="container-1">
-        <ul>
+      <nav class="container-1 d-flex justify-content-center">
+         <ul class="mt-1">
           <div>
-            <p>bild</p>
+            <p>
+            <img id="twitter-logo" src="https://www.edigitalagency.com.au/wp-content/uploads/Twitter-logo-png.png" alt="Twitter Logo"  height="20">
+          </p> 
           </div>
-          <div class="menu-home">
-            <li><a href="index.html">Home</a></li>
+          <div class="menu-home" >
+            <ul class="list-unstyled anchor-styles" >
+              <li class="menu"><a href="index.html"><i class="fa-sharp fa-solid fa-house" ></i> Home</a></li>&nbsp;
+              <li class="menu"><a href="explore.html"><i class="fa-regular fa-hashtag"></i> Explore</a></li>&nbsp;
+                <li class="menu"><a href="notification.html"><i class="fa-regular fa-bell"></i>   Notification</a></li>&nbsp;
+                    <li class="menu"><a href="bookmarks.html"><i class="fa-solid fa-message"></i>   Bookmarks</a></li>&nbsp;
+                      <li class="menu"><a href="lists.html"><i class="fa-solid fa-list"></i>   Lists</a></li>&nbsp;
+                        <li class="menu"><a href="profile.html"><i class="fa-solid fa-user"></i>   Profile</a></li>&nbsp;
+                          <li class="menu"><a href="more.html"><i class="fa-solid fa-bars"></i>   More</a></li>&nbsp;  
+             </ul>
           </div>
-          <div class="menu-explore">
-            <li><a href="index.html">Explore</a></li>
+          <div id="tweet-bar">
+            <div>
+               <button type="text" class="form-control rounded-pill tweet-bar-styles ps-5 pe-5 text-white bg-primary" >Tweet</button>
+            </div>
+         </div>
+         <section class="user-pill justify-content-end fixed-bottom p-2">
+          <div class="rounded-5 right-side-bar d-flex pe-2">
+            <div>
+            <img class="img rounded-circle"  src="https://thiscatdoesnotexist.com/" alt="Profilbild längst ner på vänstra sidan" />
+            </div>
+            <div class="ps-2 pt-2" >
+              <p class="m-0 ">Förnamn Efternamn</p>
+              <p class="m-0 text-secondary">@Användarnamn</p>
+            </div>
           </div>
-          <div class="menu-profile">
-            <li><a href="profile.html">Profile</a></li>
-          </div>
-          <div class="notifications">
-            <li><a href="index.html">Notifications</a></li>
-          </div>
-          <div class="menu-messages">
-            <li><a href="index.html">Messages</a></li>
-          </div>
-          <div class="menu-bookmarks">
-            <li><a href="index.html">Bookmarks</a></li>
-          </div>
-          <div class="menu-lists">
-            <li><a href="index.html">Lists</a></li>
-          </div>
-          <div class="menu-profile">
-            <li><a href="index.html">Profile</a></li>
-          </div>
-          <div class="menu-more">
-            <li><a href="index.html">More</a></li>
-          </div>
-        </ul>
-      </nav>
+        </section>
+    </nav>
       <!-- main -->
-      <main class="container-2 overflow-auto vh-100">
+      <main class="container-2 overflow-auto vh-100 d-flex justify-content-center">
         <div class="center-content">
-          <div class="home">home</div>
-          <div class="border">
-            <div class="tweet">
-              <div class="user">
-                <div>
-                  <img
-                    class="img"
-                    src="https://thispersondoesnotexist.com/image"
-                    alt="profilbild"
-                  />
-                </div>
-                <p><strong>namn</strong> användarnamn</p>
-              </div>
-            </div>
-
-            <div class="post">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                magni asperiores reprehenderit quam autem accusamus non
-                laudantium reiciendis in esse, provident, est nobis! Qui
-                corporis suscipit quaerat non fuga? Et?
-              </p>
-            </div>
-            <div>
-              <ul class="bar">
-                <li><a href="">comment</a></li>
-                <li><a href="">retweet</a></li>
-                <li><a href="">like</a></li>
-                <li><a href="">heart</a></li>
-              </ul>
-            </div>
-            
+          <div class="home border-start border-end ps-3 pt-2 d-flex justify-content-between opacity-75 bg-white position-fixed pe-3">
+            <strong>Home</strong>
+            <p>🖤</p>
           </div>
-          <div class="border">
-            <div class="tweet">
-              <div class="user">
+          <div class="center-content">
+            <!-- whats happening -->
+            <div class="border pt-4 ps-3">
+              <div class="post mt-4 d-flex">
                 <div>
                   <img
-                    class="img"
+                    class="img rounded-circle"
                     src="https://thispersondoesnotexist.com/image"
                     alt="profilbild"
                   />
                 </div>
-                <p><strong>namn</strong> användarnamn</p>
+                <div class="text ps-2">
+                  <input class="input w-100 h-100 ps-1 fs-5" placeholder="whats happening?"></input>
+                </div>
+              </div>
+              <div class="post-footer">
+                <ul class="bar-2 gap-3 ps-5 m-2 d-flex list-unstyled">
+                  <li><a href="">💙 </a></li>
+                  <li><a href="">↪️</a></li>
+                  <li><a href="">❤️</a></li>
+                  <li><a href="">🚀</a></li>
+                  <li><a href="">🔺</a></li>
+                </ul>
+                <div class="pe-3">
+                  <ul class="bar-2 d-flex bg-primary rounded-pill ps-3 pe-3 p-2">
+                    <li class="tweet "><a href="">Tweet</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-            <div class="post">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                magni asperiores reprehenderit quam autem accusamus non
-                laudantium reiciendis in esse, provident, est nobis! Qui
-                corporis suscipit quaerat non fuga? Et?
-              </p>
-            </div>
-            <div>
-              <ul class="bar">
-                <li><a href="">comment</a></li>
-                <li><a href="">retweet</a></li>
-                <li><a href="">like</a></li>
-                <li><a href="">heart</a></li>
-              </ul>
-            </div>
-            
           </div>
-          <div class="border">
-            <div class="tweet">
-              <div class="user">
-                <div>
-                  <img
-                    class="img"
-                    src="https://thispersondoesnotexist.com/image"
-                    alt="profilbild"
-                  />
+          <!-- tweet -->
+          <div class="border border-1 ps-3">
+            <div class="post mt-4 d-flex">
+                <img
+                  class="img rounded-circle"
+                  src="https://thispersondoesnotexist.com/image"
+                  alt="profilbild"
+                />
+            
+              <div>
+                <div class="user ps-2 d-flex gap-2 ps-4">
+                  <p class="m-0 "><strong>FreddeCool95</strong></p>
+                  <p class="m-0 text-secondary">@Fredik.mallen 11h</p>
                 </div>
-                <p><strong>namn</strong> användarnamn</p>
+                <p class="text ps-4 me-2 pe-2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla magni asperiores reprehenderit quam autem accusamus non
+                  laudantium reiciendis in esse, provident, est nobis! Qui
+     
+                </p>
               </div>
             </div>
-
-            <div class="post">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                magni asperiores reprehenderit quam autem accusamus non
-                laudantium reiciendis in esse, provident, est nobis! Qui
-                corporis suscipit quaerat non fuga? Et?
-              </p>
-            </div>
             <div>
-              <ul class="bar">
-                <li><a href="">comment</a></li>
-                <li><a href="">retweet</a></li>
-                <li><a href="">like</a></li>
-                <li><a href="">heart</a></li>
+              <ul class="bar ps-5 list-unstyled gap-5 d-flex">
+                <li><a class="text-secondary" href="#">💬 13.2</a></li>
+                <li><a class="text-secondary" href="#">↪️ 195</a></li>
+                <li><a class="text-secondary" href="#">❤️ 2,503</a></li>
+                <li><a class="text-secondary" href="#">🚀</a></li>
+                <li><a class="text-secondary" href="#">🔺 dricks</a></li>
               </ul>
             </div>
-            
           </div>
-          <div class="border">
-            <div class="tweet">
-              <div class="user">
-                <div>
-                  <img
-                    class="img"
-                    src="https://thispersondoesnotexist.com/image"
-                    alt="profilbild"
-                  />
+          <!-- tweet2 -->
+          <div class="border border-1 ps-3">
+            <div class="post mt-4 d-flex">
+                <img
+                  class="img rounded-circle"
+                  src="https://thispersondoesnotexist.com/image"
+                  alt="profilbild"
+                />
+            
+              <div>
+                <div class="user ps-2 d-flex gap-2 ps-4">
+                  <p class="m-0 "><strong>Nina</strong></p>
+                  <p class="m-0 text-secondary">@Nina.9843 14h</p>
                 </div>
-                <p><strong>namn</strong> användarnamn</p>
+                <p class="text ps-4 me-2 pe-2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. lo
+                </p>
+                <img class="w-75 ms-4 rounded-2 mb-2" src="./skål.jpeg" alt="people drinking">
               </div>
             </div>
-
-            <div class="post">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                magni asperiores reprehenderit quam autem accusamus non
-                laudantium reiciendis in esse, provident, est nobis! Qui
-                corporis suscipit quaerat non fuga? Et?
-              </p>
-            </div>
             <div>
-              <ul class="bar">
-                <li><a href="">comment</a></li>
-                <li><a href="">retweet</a></li>
-                <li><a href="">like</a></li>
-                <li><a href="">heart</a></li>
+              <ul class="bar ps-5 list-unstyled gap-5 d-flex">
+                <li><a class="text-secondary" href="#">💬 13.2</a></li>
+                <li><a class="text-secondary" href="#">↪️ 195</a></li>
+                <li><a class="text-secondary" href="#">❤️ 2,503</a></li>
+                <li><a class="text-secondary" href="#">🚀</a></li>
+                <li><a class="text-secondary" href="#">🔺 dricks</a></li>
               </ul>
             </div>
+          </div>
+          <!-- tweet3 -->
+          <div class="border border-1 ps-3">
+            <div class="post mt-4 d-flex">
+                <img
+                  class="img rounded-circle"
+                  src="https://thispersondoesnotexist.com/image"
+                  alt="profilbild"
+                />
             
+              <div>
+                <div class="user ps-2 d-flex gap-2 ps-4">
+                  <p class="m-0 "><strong>Ronny</strong></p>
+                  <p class="m-0 text-secondary">@Ronny 1d</p>
+                </div>
+                <p class="text ps-4 me-2 pe-2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto quidem asperiores voluptatibus quae. Voluptatum facere excepturi, suscipit neque porro quae quidem repellendus molestias dicta assumenda, cumque est doloribus eligendi!
+     
+                </p>
+              </div>
+            </div>
+            <div>
+              <ul class="bar ps-5 list-unstyled gap-5 d-flex">
+                <li><a class="text-secondary" href="#">💬 13.2</a></li>
+                <li><a class="text-secondary" href="#">↪️ 195</a></li>
+                <li><a class="text-secondary" href="#">❤️ 2,503</a></li>
+                <li><a class="text-secondary" href="#">🚀</a></li>
+                <li><a class="text-secondary" href="#">🔺 dricks</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- tweet4 -->
+          <div class="border border-1 ps-3">
+            <div class="post mt-4 d-flex">
+                <img
+                  class="img rounded-circle"
+                  src="https://thispersondoesnotexist.com/image"
+                  alt="profilbild"
+                />
+            
+              <div>
+                <div class="user ps-2 d-flex gap-2 ps-4">
+                  <p class="m-0 "><strong>Lisa.98</strong></p>
+                  <p class="m-0 text-secondary">@Lisa 2d</p>
+                </div>
+                <p class="text ps-4 me-2 pe-2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla magni asperiores reprehenderit quam autem accusamus non
+                  laudantium reiciendis in esse, provident, est nobis! Qui
+     
+                </p>
+              </div>
+            </div>
+            <div>
+              <ul class="bar ps-5 list-unstyled gap-5 d-flex">
+                <li><a class="text-secondary" href="#">💬 13.2</a></li>
+                <li><a class="text-secondary" href="#">↪️ 195</a></li>
+                <li><a class="text-secondary" href="#">❤️ 2,503</a></li>
+                <li><a class="text-secondary" href="#">🚀</a></li>
+                <li><a class="text-secondary" href="#">🔺 dricks</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- Right-side -->
-        <div class="right-side">
-            <div class="search p-1">
-                <input type="text" class="form-control rounded-pill" placeholder="Search twitter">
+        <div class="right-side overflow-auto mb-0 mt-0 m-4">
+          <div class="search p-1 position-fixed">
+            <input
+              type="text"
+              class="form-control rounded-pill bg-white opacity-75"
+              placeholder="Search twitter"
+            />
+          </div>
+          <div class="trends-container rounded-4 p-3 mt-5 bg-light">
+            <div class="trends-header d-flex justify-content-between">
+              <h6>Trends for you</h6>
+              <button class="button-trend bg-transparent fs-6">⚙️</button>
             </div>
-          <div class="trends-container">
-            <div class="trends-header">
-                <h3>Trends for you </h3>
-                <button>⚙️</button>
+            <div class="trend mb-4 ms-1">
+              <button class="button-trend bg-transparent float-end fs-6">
+                ⚙️
+              </button>
+              <div class="trending-sweden">
+                <small class="d-flex justify-content-between">
+                  Trending in Sweden
+                </small>
+                <small class="d-flex"><strong>Bulletin</strong></small>
+                <small>6,003 Tweets</small>
+              </div>
             </div>
-            <div class="trend">
-                <div>
-                    <small>Trending in Sweden</small>
-                    <button>⚙️</button>
+            <div class="trend mb-4">
+              <button class="button-trend bg-transparent float-end fs-6">
+                ⚙️
+              </button>
+              <div class="trending-sweden">
+                <small class="d-flex justify-content-between">
+                  Trending in Sweden</small
+                >
+                <small class="d-flex"><strong>Arlanda</strong></small>
+              </div>
+            </div>
+            <div class="trend mb-4">
+              <button class="button-trend bg-transparent float-end fs-6">
+                ⚙️
+              </button>
+              <div class="trending-sweden">
+                <small class="d-flex justify-content-between">
+                  Automobile Brands - Trending
+                </small>
+                <small class="d-flex"><strong>Tesla</strong></small>
+                <small>142k Tweets</small>
+              </div>
+            </div>
+            <div class="trend mb-3">
+              <div class="trending-sweden">
+                <button class="button-trend bg-transparent float-end fs-6">
+                  ⚙️
+                </button>
+                <small class="d-flex justify-content-between">
+                  Technology - Trending
+                </small>
+                <small class="d-flex"><strong> Bitcoin</strong></small>
+                <small>348K Tweets</small>
+              </div>
+            </div>
+            <div class="trend mb-4">
+              <div class="trending-sweden">
+                <button class="button-trend bg-transparent float-end fs-6">
+                  ⚙️
+                </button>
+                <small class="d-flex justify-content-between">
+                  Trending in Sweden
+                </small>
+                <small class="d-flex"><strong>Nordea</strong></small>
+              </div>
+            </div>
+            <div>
+              <button class="button-show-more bg-transparent text-primary">
+                Show more
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="follow-container rounded-4 p-3 mt-2 align-content-lg-center bg-light"
+          >
+            <div class="who-to-follow">
+              <h5>Who to follow</h5>
+            </div>
+            <div class="follow w-100 h-25 mt-4">
+              <div class="user-follow">
+                <div class="user-follow-space gap-2 d-flex">
+                  <img
+                    class="img rounded-circle"" 
+                    src="https://thispersondoesnotexist.com/image"
+                    alt="profilbild"
+                  />
+                  <div>
+                    <small><strong>namn</strong></small>
+                    <small
+                      class="user-follow-name d-flex justify-content-center"
+                    >
+                      @användarnamn
+                      <small class="follow-you ms-1 bg-secondary bg-opacity-50">
+                        Follows you</small
+                      >
+                    </small>
+                  </div>
+
+                  <button
+                    class="button-follow bg-black rounded-pill h-25 text-white h-25 pt-0 ps-2 pe-2"
+                  >
+                    Follow
+                  </button>
                 </div>
-             <p><strong> bitcoin</strong></p>
-             <small>6,003 Tweets</small>
-            </div>   
+              </div>
+              <div class="user-follow mt-2">
+                <div class="user-follow-space gap-2 mb-4 d-flex">
+                  <img
+                    class="img rounded-circle"
+                    src="https://thispersondoesnotexist.com/image"
+                    alt="profilbild"
+                  />
+                  <div>
+                    <small><strong>namn</strong></small>
+                    <small
+                      class="user-follow-name d-flex justify-content-center"
+                    >
+                      @användarnamn
+                      <small class="follow-you ms-1 bg-secondary bg-opacity-50"
+                        >Follows you</small
+                      >
+                    </small>
+                  </div>
+
+                  <button
+                    class="button-follow bg-black rounded-pill h-25 pt-0 ps-2 pe-2 text-white"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+              <div>
+                <button class="button-show-more bg-transparent text-primary">
+                  Show more
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <ul
+              class="footer-list d-flex mb-lg-5 justify-content-around align-items-center"
+            >
+              <li>
+                <a class="text-secondary text-decoration-none" href=""
+                  >Terms of Service </a
+                ><a class="text-secondary text-decoration-none" href=""
+                  >Privacy Policy </a
+                ><a class="text-secondary text-decoration-none" href=""
+                  >Cookie Policy </a
+                ><a class="text-secondary text-decoration-none" href=""
+                  >Ads info </a
+                ><a class="text-secondary text-decoration-none" href=""
+                  >More
+                </a>
+                <a class="text-secondary text-decoration-none" href=""> ...</a>
+                <a class="text-secondary text-decoration-none" href=""
+                  >@2021 Twitter, Inc.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="message-bottom border border-bottom-0 p-2 rounded-top mt-2 mb-0 align-content-lg-center bg-light"
+          >
+            <div class="trends-bottom">
+              <button class="button-trend bg-transparent float-end fs-6">
+                ⚙️
+              </button>
+              <button class="button-trend bg-transparent float-end fs-6">
+                ⚙️
+              </button>
+              <div class="trends-header fs6">
+                <h6>Message</h6>
+              </div>
+            </div>
           </div>
         </div>
       </main>
